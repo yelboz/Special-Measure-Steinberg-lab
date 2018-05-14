@@ -1,0 +1,192 @@
+data/sm GUI/saveppt.asv.i
+data/sm GUI/saveppt.m.i
+data/sm GUI/send_text_message.asv.i
+data/sm GUI/send_text_message.m.i
+data/sm GUI/simplegui2.m.i
+data/sm GUI/smgui.asv.i
+data/sm GUI/smgui.m.i
+data/sm GUI/smguibeta.asv.i
+data/sm GUI/smprintinst2.m.i
+data/sm GUI/smsaveppt.asv.i
+data/sm GUI/smsaveppt.m.i
+data/sm/README.txt.i
+data/sm/README.txt~.i
+data/sm/changelog.txt.i
+data/sm/changelog.txt~.i
+data/sm/channels/smaDMMsnglmode.asv.i
+data/sm/channels/smaDMMsnglmode.m.i
+data/sm/channels/smabufconfig.asv.i
+data/sm/channels/smabufconfig.m.i
+data/sm/channels/smabufconfig.m~.i
+data/sm/channels/smaconfigwrap.m.i
+data/sm/channels/smadacinit.m.i
+data/sm/channels/smadacinit.m~.i
+data/sm/channels/smadacinitOld.m.i
+data/sm/channels/smadacstepmode.asv.i
+data/sm/channels/smadacstepmode.m.i
+data/sm/channels/smarampYokoLeCroy.asv.i
+data/sm/channels/smarampYokoLeCroy.m.i
+data/sm/channels/smarampYokoSR830.asv.i
+data/sm/channels/smarampYokoSR830.m.i
+data/sm/channels/smarampYokoSR830dmm.asv.i
+data/sm/channels/smarampYokoSR830dmm.m.i
+data/sm/channels/smarampYokoTDS.asv.i
+data/sm/channels/smarampYokoTDS.m.i
+data/sm/channels/smarampconfig.asv.i
+data/sm/channels/smarampconfig.m.i
+data/sm/channels/smarampconfig.m~.i
+data/sm/channels/smaresetSR830.asv.i
+data/sm/channels/smaresetSR830.m.i
+data/sm/channels/smastopYokos.asv.i
+data/sm/channels/smastopYokos.m.i
+data/sm/channels/smatrig.m.i
+data/sm/channels/smatrigAWG.asv.i
+data/sm/channels/smatrigAWG.m.i
+data/sm/channels/smatrigAWG.m~.i
+data/sm/channels/smatrigDAC.asv.i
+data/sm/channels/smatrigDAC.m.i
+data/sm/channels/smatrigYokoSR830.asv.i
+data/sm/channels/smatrigYokoSR830.m.i
+data/sm/channels/smatrigYokoSR830dmm.asv.i
+data/sm/channels/smatrigYokoSR830dmm.m.i
+data/sm/channels/smatrigYokoTDS.asv.i
+data/sm/channels/smatrigYokoTDS.m.i
+data/sm/channels/smatrigfn.m.i
+data/sm/channels/smcAMI420.m.i
+data/sm/channels/smcATS660.asv.i
+data/sm/channels/smcATS660.m.i
+data/sm/channels/smcAWG520.asv.i
+data/sm/channels/smcAWG520.m.i
+data/sm/channels/smcCoarseStep.asv.i
+data/sm/channels/smcCoarseStep.m.i
+data/sm/channels/smcDecaDAC.asv.i
+data/sm/channels/smcDecaDAC.m.i
+data/sm/channels/smcDecaDAC.m~.i
+data/sm/channels/smcDecaDAC2.asv.i
+data/sm/channels/smcDecaDAC2.m.i
+data/sm/channels/smcDecaDAC2.m~.i
+data/sm/channels/smcDecaDAC3.asv.i
+data/sm/channels/smcDecaDAC3.m.i
+data/sm/channels/smcDecaDAC3.m~.i
+data/sm/channels/smcDecaDAC4.m.i
+data/sm/channels/smcDecaDAC4.m~.i
+data/sm/channels/smcDecaDAC4old.m.i
+data/sm/channels/smcHP1000A.asv.i
+data/sm/channels/smcHP1000A.m.i
+data/sm/channels/smcIPS12010.asv.i
+data/sm/channels/smcIPS12010.m.i
+data/sm/channels/smcIPS12010GPIB.asv.i
+data/sm/channels/smcIPS12010GPIB.m.i
+data/sm/channels/smcIPS12010GPIB.m~.i
+data/sm/channels/smcLeCroy.asv.i
+data/sm/channels/smcLeCroy.m.i
+data/sm/channels/smcSR830.asv.i
+data/sm/channels/smcSR830.m.i
+data/sm/channels/smcTDS5104.asv.i
+data/sm/channels/smcTDS5104.m.i
+data/sm/channels/smcTDS5104.m~.i
+data/sm/channels/smcYoko.asv.i
+data/sm/channels/smcYoko.m.i
+data/sm/channels/smcaux.m.i
+data/sm/channels/smcdmm.asv.i
+data/sm/channels/smcdmm.m.i
+data/sm/channels/smcfeedback.m.i
+data/sm/channels/smctemplate.asv.i
+data/sm/channels/smctemplate.m.i
+data/sm/channels/smctest.asv.i
+data/sm/channels/smctest.m.i
+data/sm/logadd.m.i
+data/sm/logentry.m.i
+data/sm/lognote.m.i
+data/sm/logsetfile.m.i
+data/sm/smaddchannel.asv.i
+data/sm/smaddchannel.m.i
+data/sm/smalintrafo.asv.i
+data/sm/smalintrafo.m.i
+data/sm/smchaninst.asv.i
+data/sm/smchaninst.m.i
+data/sm/smchanlookup.m.i
+data/sm/smclose.m.i
+data/sm/smdiagpar.asv.i
+data/sm/smdiagpar.m.i
+data/sm/smdiagpar.m~.i
+data/sm/smdispchan.m.i
+data/sm/smflush.m.i
+data/sm/smget.asv.i
+data/sm/smget.m.i
+data/sm/sminitdisp.asv.i
+data/sm/sminitdisp.m.i
+data/sm/sminstlookup.asv.i
+data/sm/sminstlookup.m.i
+data/sm/smopen.asv.i
+data/sm/smopen.m.i
+data/sm/smprintchannels.asv.i
+data/sm/smprintchannels.m.i
+data/sm/smprintf.m.i
+data/sm/smprintinst.m.i
+data/sm/smprintrange.asv.i
+data/sm/smprintrange.m.i
+data/sm/smprintscan.asv.i
+data/sm/smprintscan.m.i
+data/sm/smquery.m.i
+data/sm/smrun.asv.i
+data/sm/smrun.m.i
+data/sm/smrun.m~.i
+data/sm/smrunFlip.m.i
+data/sm/smscanf.m.i
+data/sm/smscanpar.asv.i
+data/sm/smscanpar.m.i
+data/sm/smscanpar.m~.i
+data/sm/smset.m.i
+data/sm GUI/smguirack.m.i
+data/sm/channels/smcLinearCombination.m.i
+data/sm GUI/smauxinit.m.i
+data/sm GUI/smbatch.asv.i
+data/sm GUI/smbatch.m.i
+data/sm GUI/smnotify.m.i
+data/sm/channels/smarampYokoSR830dmm2.asv.i
+data/sm/channels/smarampYokoSR830dmm2.m.i
+data/.hgignore.i
+data/sm/channels/smcATS660v2.asv.i
+data/sm/channels/smcATS660v2.m.i
+data/sm/channels/smcAWG5000.asv.i
+data/sm/channels/smcAWG5000.m.i
+data/sm/channels/smcHP8350B.m.i
+data/sm/procfn/smpAve.m.i
+data/sm/procfn/smpSpect.asv.i
+data/sm/procfn/smpSpect.m.i
+data/sm/procfn/smpSpect.m~.i
+data/sm/procfn/smpSpect2.asv.i
+data/sm/procfn/smpSpect2.m.i
+data/sm/procfn/smpSpect2.m~.i
+data/sm/procfn/smpSpectT.m~.i
+data/sm/smrun.m.orig.i
+data/sm/channels/smatrigDecaDACSR830dmm.asv.i
+data/sm/channels/smatrigDecaDACSR830dmm.m.i
+data/sm/smgetscanconst.m.i
+data/sm/smsetscanconst.m.i
+data/sm GUI/smguichannels.asv.i
+data/sm GUI/smguichannels.m.i
+data/sm/channels/smabufconfig2.asv.i
+data/sm/channels/smabufconfig2.m.i
+data/sm/smrestore.m.i
+data/sm GUI/sm.fig.i
+data/sm GUI/sm.m.i
+data/sm GUI/sm_Callback.m.i
+data/sm/smsavechans.m.i
+data/sm/smsaveinst.m.i
+data/Introduction.pptx.i
+data/Introduction.pptx.d
+data/Introduction.pptx.i
+data/Introduction.pptx.d
+data/Introduction.pptx.i
+data/sm/channels/smcATS660v3.m.i
+data/sm/channels/smcCS410V.m.i
+data/sm/channels/smcN.m.i
+data/sm/smcheckdata.m.i
+data/sm/sminc.m.i
+data/sm/smloadchans.m.i
+data/sm/smloadinst.m.i
+data/sm GUI/smauxinit2.m.i
+data/COPYING.i
+data/LICENSE.i
