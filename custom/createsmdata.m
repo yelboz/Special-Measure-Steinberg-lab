@@ -25,7 +25,7 @@ smdata.inst(num).channels=['X    ';'Y    ';'R    ';'THETA';'FREQ ';'VREF ';'IN1 
 
 %Associate channel type with each channel (1 for self ramping, zero
 %otherwise
-chans=size(smdata.inst(1).channels,1);
+chans=size(smdata.inst(num).channels,1);
 smdata.inst(num).type=zeros(chans,1);
 
 %Associate data dimension with channel (how many values simultaneously may
@@ -55,7 +55,7 @@ smdata.inst(num).channels=['X    ';'Y    ';'R    ';'THETA';'FREQ ';'VREF ';'IN1 
 
 %Associate channel type with each channel (1 for self ramping, zero
 %otherwise
-chans=size(smdata.inst(1).channels,1);
+chans=size(smdata.inst(num).channels,1);
 smdata.inst(num).type=zeros(chans,1);
 
 %Associate data dimension with channel (how many values simultaneously may
@@ -94,6 +94,26 @@ num = num + 1;
 adr=25;
 smdata.inst(num).device='k2400';
 smdata.inst(num).name='Keithley 2';
+smdata.inst(num).cntrlfn=@smcKeithley2400; 
+smdata.inst(num).data.inst=gpib('ni', 0, adr);
+smdata.inst(num).channels=['dcv ';'dcc '];
+chans=size(smdata.inst(num).channels,1);
+smdata.inst(num).type=zeros(chans,1);
+smdata.inst(num).datadim=zeros(chans,1);
+smdata.inst(num).data.sampint=0.1250; % not sure what this is. took the value from a ready made smdata from yacoby lab
+smdata.inst(num).data.currsamp=101; % not sure what this is. took the value from a ready made smdata from yacoby lab
+
+chancount = chancount + chans;
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%Keithley 3
+num = num + 1;
+adr=27;
+smdata.inst(num).device='k2400';
+smdata.inst(num).name='Keithley 3';
 smdata.inst(num).cntrlfn=@smcKeithley2400; 
 smdata.inst(num).data.inst=gpib('ni', 0, adr);
 smdata.inst(num).channels=['dcv ';'dcc '];
@@ -291,12 +311,12 @@ smdata.inst(num).device='Cryo4G';
 smdata.inst(num).name='Cryo4G';
 smdata.inst(num).cntrlfn=@smcCryo4G; 
 smdata.inst(num).data.inst=tcpip(ip,port);
-smdata.inst(num).channels=['field ';'pfield';'pshtr ';'remote'];
+smdata.inst(num).channels=['field  ';'pfield ';'pshtr  ';'remote '];
 chans=size(smdata.inst(num).channels,1);
 smdata.inst(num).type=zeros(l6,1);
 smdata.inst(num).type(1)=1;
 smdata.inst(num).type(2)=1;
-smdata.inst(num).datadim=zeros(l6,1);
+smdata.inst(num).datadim=zeros(chans,1);
 smdata.inst(num).data.sampint=0.1250; % not sure what this is. took the value from a ready made smdata from yacoby lab
 smdata.inst(num).data.currsamp=101; % not sure what this is. took the value from a ready made smdata from yacoby lab
 
@@ -316,22 +336,58 @@ chancount = chancount + chans;
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%
-%He3 magnet
+%lakeshore 336
 num = num + 1;
 
 
-%lakeshore 336
+
 adr=12;
 smdata.inst(num).device='lakes336';
 smdata.inst(num).name='lakes336';
 smdata.inst(num).cntrlfn=@smcLakes336; 
 smdata.inst(num).data.inst=gpib('ni', 0, adr);
-smdata.inst(num).channels=['setp1   ';'setp2   ';'range1  ';'range2  ';'T_1Kpot ';'T_sorb  ';'T_he3   ';'T_sample';'R_1Kpot ';'R_sorb  ';'R_he3   ';'R_sample'];
+smdata.inst(num).channels=['setp1    ';'setp2    ';'range1   ';'range2   ';'T_1Kpot  ';'T_sorb   ';'T_he3    ';'T_sample ';'R_1Kpot  ';'R_sorb   ';'R_he3    ';'R_sample '];
 chans=size(smdata.inst(num).channels,1);
-smdata.inst(num).type=zeros(l7,1);
-smdata.inst(num).datadim=zeros(l7,1);
+smdata.inst(num).type=zeros(chans,1);
+smdata.inst(num).datadim=zeros(chans,1);
 smdata.inst(num).data.sampint=0.1250; % not sure what this is. took the value from a ready made smdata from yacoby lab
 smdata.inst(num).data.currsamp=101; % not sure what this is. took the value from a ready made smdata from yacoby lab
+
+
+chancount = chancount + chans;
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%DAC 2
+num = num + 1;
+
+
+%DAC 2
+adr='COM5';
+smdata.inst(num).device='DAC';
+smdata.inst(num).name='DAC 2';
+smdata.inst(num).cntrlfn=@smcDAC; 
+smdata.inst(num).data.inst=serial(adr,'BaudRate',115200);
+smdata.inst(num).channels=['out0  ';'out1  ';'out2  ';'out3  '];
+chans=size(smdata.inst(num).channels,1);
+smdata.inst(num).type=zeros(chans,1);
+smdata.inst(num).datadim=zeros(chans,1);
+smdata.inst(num).data.sampint=0.1250; % not sure what this is. took the value from a ready made smdata from yacoby lab
+smdata.inst(num).data.currsamp=101; % not sure what this is. took the value from a ready made smdata from yacoby lab
+
 
 
 chancount = chancount + chans;

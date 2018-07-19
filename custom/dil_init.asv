@@ -20,7 +20,7 @@ chan  = 0;
 %%%%%%%%%%%%%%%%%%%%%%%
 
 % Initialize Keithley1
-Keithley1Voltage =1; 
+Keithley1Voltage = 1; 
 
 
 
@@ -59,10 +59,10 @@ if Keithley1Voltage == 1
     fprintf(smdata.inst(k1ind).data.inst,'*RST');
     fprintf(smdata.inst(k1ind).data.inst,':sour:func volt');
     fprintf(smdata.inst(k1ind).data.inst,':sour:volt:mode fix');
-    fprintf(smdata.inst(k1ind).data.inst,':sour:volt:rang 50');
+    fprintf(smdata.inst(k1ind).data.inst,':sour:volt:rang 210');
     %fprintf(smdata.inst(k1ind).data.inst,':sour:volt:rang 10');
-    fprintf(smdata.inst(k1ind).data.inst,':sens:curr:prot 6E-3');
-    fprintf(smdata.inst(k1ind).data.inst,':sens:curr:RANG 6e-3');
+    fprintf(smdata.inst(k1ind).data.inst,':sens:curr:prot 105E-6');
+    fprintf(smdata.inst(k1ind).data.inst,':sens:curr:RANG 105e-6');
     fprintf(smdata.inst(k1ind).data.inst,':outp on');
 else
     %initialize Keithley 2400 as a current source (for reading T or driving

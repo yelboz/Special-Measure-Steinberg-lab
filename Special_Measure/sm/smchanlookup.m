@@ -3,6 +3,7 @@ function chanind = smchanlookup(channels);
 
 global smdata;
 
+
 if isnumeric(channels)
     chanind = channels;
     if size(chanind, 2) > 1

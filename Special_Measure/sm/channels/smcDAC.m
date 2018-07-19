@@ -19,7 +19,7 @@ switch ico(3) % operation mode: 0 - get ,  1 - set
             if abs(val)<=10
               data = sprintf('SET, %s, %s',num2str(ico(2)-1),num2str(val));
               fprintf(smdata.inst(ico(1)).data.inst,'%s\r',data);
-              fgets(smdata.inst(ico(1)).data.inst);                
+              fgets(smdata.inst(ico(1)).data.inst)           
             else
                 error('output voltage above 10V is not allowed')
             end

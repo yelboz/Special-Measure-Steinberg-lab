@@ -25,9 +25,12 @@ switch ico(2) % channel
     case 2 %current
         switch ico(3) %operation
             case 0 %get
-                strval = query(smdata.inst(ico(1)).data.inst, 'READ?');
-                val=str2num(char(strval(15:28)));
-                
+%                 strval = query(smdata.inst(ico(1)).data.inst, 'READ?');
+%                 val=str2num(char(strval(15:28)));
+            val = query(smdata.inst(ico(1)).data.inst, 'SOUR:CURR:LEV:IMM:AMPL?', '%s\n', '%f');
+            case 1 % set
+                 fprintf(smdata.inst(ico(1)).data.inst, ':SOUR:CURR:LEV %f\n', val);
+%                 fprintf(obj,[':SOUR:CURR:LEV ',num2str(NM)]);
             otherwise
                 error('Operation not supported');
         end

@@ -11,17 +11,24 @@ switch ic(3) % get or set
     case 0 %get
         device = 'dev3408';
         demod_c = 0;   
-        ziDAQ('connect', '132.64.80.238', 8004, 6)
-        ziDAQ('sync')
+%         ziDAQ('connect', '132.64.80.238', 8004, 6)
+%         ziDAQ('sync')
         ziDAQ('subscribe', ['/' device '/demods/' demod_c '/sample']);
-        pause(0.07)
+        pause(0.05)
         data = ziDAQ('poll', 0.01, 0.02);
-        
-        x =  mean(data.dev3408.demods.sample.x);
-        y =  mean(data.dev3408.demods.sample.y);
-        phase =  mean(data.dev3408.demods.sample.phase);
-        in0 =  mean(data.dev3408.demods.sample.auxin0);
-        in1 = mean(data.dev3408.demods.sample.auxin1);
+        try
+            x =  mean(data.dev3408.demods.sample.x);
+            y =  mean(data.dev3408.demods.sample.y);
+            phase =  mean(data.dev3408.demods.sample.phase);
+            in0 =  mean(data.dev3408.demods.sample.auxin0);
+            in1 = mean(data.dev3408.demods.sample.auxin1);
+        catch
+            x=0;
+            y=0;
+            phase = 0;
+            in0 = 0;
+            in1 = 0;
+        end
         switch ic(2) % channel
             case 1 %X
                 val = x;
