@@ -543,7 +543,17 @@ smaddchannel('MFLI','X','ZX',[],chan);
 chan = chan + 1;
 smaddchannel('MFLI','R','ZR',[],chan);
 chan = chan + 1;
-smaddchannel('MFLI','IN1','ZN1',[],chan);
+smaddchannel('MFLI','IN1','ZiN1',[],chan);
+chan = chan + 1;
+smaddchannel('MFLI','IN2','ZiN2',[],chan);
+chan = chan + 1;
+smaddchannel('MFLI','OUT1','Zout1',[],chan);
+chan = chan + 1;
+smaddchannel('MFLI','OUT2','Zout2',[],chan);
+chan = chan + 1;
+smaddchannel('MFLI','OUT3','Zout3',[],chan);
+chan = chan + 1;
+smaddchannel('MFLI','OUT4','Zout4',[],chan);
 chan = chan + 1;
 smaddchannel('MFLI','OFFSET','Zoffset',[],chan);
 
