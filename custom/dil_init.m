@@ -211,7 +211,7 @@ else
     fprintf(smdata.inst(k3ind).data.inst,':sour:func curr');
     fprintf(smdata.inst(k3ind).data.inst,':sens:func "volt"');
     fprintf(smdata.inst(k3ind).data.inst,':outp on');
-    fprintf(smdata.inst(k3ind).data.inst,':sour:curr 2e-3'); % for T
+    fprintf(smdata.inst(k3ind).data.inst,':sour:curr 0e-3'); % for T
 %     fprintf(smdata.inst(3).data.inst,':sour:curr 0e-8')   % for current biasing
 %     fprintf(smdata.inst(k1ind).data.inst,':sour:curr:RANG 1e-8');
 %     fprintf(smdata.inst(k1ind).data.inst,':sens:volt:RANG 200e-2')
@@ -543,9 +543,9 @@ smaddchannel('MFLI','X','ZX',[],chan);
 chan = chan + 1;
 smaddchannel('MFLI','R','ZR',[],chan);
 chan = chan + 1;
-smaddchannel('MFLI','IN1','ZiN1',[],chan);
+smaddchannel('MFLI','IN1','Zin1',[],chan);
 chan = chan + 1;
-smaddchannel('MFLI','IN2','ZiN2',[],chan);
+smaddchannel('MFLI','IN2','Zin2',[],chan);
 chan = chan + 1;
 smaddchannel('MFLI','OUT1','Zout1',[],chan);
 chan = chan + 1;
